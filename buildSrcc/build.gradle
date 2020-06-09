@@ -1,0 +1,33 @@
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply from:'./upload.gradle'
+
+repositories {
+    google()
+    jcenter()
+
+}
+
+dependencies {
+    // Groovy DSL
+    implementation localGroovy()
+
+    // Gradle DSL
+    implementation gradleApi()
+    implementation 'com.tinify:tinify:1.6.4'
+    // Android DSL
+
+}
+
+
+sourceSets {
+    main {
+        groovy {
+            srcDir 'src/main/groovy'
+        }
+
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
