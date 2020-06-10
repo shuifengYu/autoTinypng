@@ -2,12 +2,6 @@ apply plugin: 'groovy'
 apply plugin: 'java'
 apply from:'./upload.gradle'
 
-repositories {
-    google()
-    jcenter()
-
-}
-
 dependencies {
     // Groovy DSL
     implementation localGroovy()

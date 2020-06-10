@@ -3,15 +3,16 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven {
-            url 'https://dl.bintray.com/coderyu/drawable_auto_compress_plugin'
-        }
+//        maven {
+//            url 'https://dl.bintray.com/coderyu/drawable_auto_compress_plugin'
+//        }
 
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.5'
-        classpath 'auto_compress:com.coder_yu.plugin:0.0.2'
+//        classpath 'auto_compress:com.coder_yu.plugin:0.0.2'
+        classpath 'com.coder_yu.plugin:auto_compress:0.0.4'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
