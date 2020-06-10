@@ -1,19 +1,17 @@
 # autoTinypng [ ![Download](https://api.bintray.com/packages/coderyu/drawable_auto_compress_plugin/auto_compress/images/download.svg) ](https://bintray.com/coderyu/drawable_auto_compress_plugin/auto_compress/_latestVersion)
+##Overview
 
-
-#### Overview
-
-可以用来自动化压缩图片资源，每次编译前会先压缩图片资源，已减小apk文件大小
+可以用来自动化压缩图片资源，每次编译前会先压缩图片资源，以减小apk文件大小
 
 本项目是以一个gralde插件的形式来自动化压缩图片资源
 
 图片压缩算法用的是tinypng的，所以需要用户自己注册tinypng的账号获取key，普通用户每个月可以压缩500张，具体规则可以看tinypng官网
 
-插件会在preBuild之前(也就是正常编译或者打包前都会检查并压缩)根据配置的信息去压缩对应的图片资源，压缩过的图片有做缓存，不会重复压缩
+插件会在preBuild之前(也就是正常编译或者打包前)根据配置的信息去压缩对应的图片资源，压缩过的图片有做缓存，不会重复压缩
 
 
 
-**图片压缩后会覆盖源文件，并且会再根目录下生成一个.tinycache缓存文件，需要一并加入版本管理并上传至仓库，防止多人重复压缩相同文件造成浪费**
+**图片压缩后会覆盖源文件，并且会在根目录下生成一个.tinycache缓存文件，需要一并加入版本管理并上传至仓库，防止多人重复压缩相同文件造成浪费**
 
 
 
@@ -28,7 +26,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'auto_compress:com.coder_yu.plugin:<lastest_version>'
+        classpath 'com.coder_yu.plugin:auto_compress:<lastest_version>'
     }
 }
 
@@ -45,4 +43,4 @@ configInfo {
 }
 ```
 
-OK，直接开始吧
+OK，请开始你的表扬吧~
